@@ -4,7 +4,6 @@ public class MultiplosTres {
         int num;
         int soma;
 
-
         cont = 0;
         num = 0;
         soma = 0;
