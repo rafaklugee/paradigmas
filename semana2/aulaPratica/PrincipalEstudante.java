@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Principal {
+public class PrincipalEstudante {
     public static void main(String[] args) {
         String nome;
         double notaFinal;

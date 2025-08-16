@@ -23,7 +23,7 @@ public class Estudante {
     }
 
     // Outros métodos
-    public void exibirDados(String nome, double notaFinal) {
-        System.out.println("Nome: " + nome + "\n" + "Nota Final: " + notaFinal);
+    public void exibirDados() {
+        System.out.println("Nome: " + this.nome + "\nNota Final: " + this.notaFinal);
     }
 }
