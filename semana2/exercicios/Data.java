@@ -27,35 +27,35 @@ public class Data {
             this.mes = mes;
     }
 
-    public void setAno(int Ano) {
+    public void setAno(int ano) {
         if (ano >= 0)
             this.ano = ano;
     }
 
-    public boolean posterior(int dia, int mes, int ano) {
-        if (this.ano > ano)
+    public boolean posterior(Data data) {
+        if (this.ano > data.ano)
             return true;
-        else if (this.ano == ano && this.mes > mes)
+        else if (this.ano == data.ano && this.mes > data.mes)
             return true;
-        else if (this.ano == ano && this.mes == mes && this.dia > dia)
-            return true;
-        else
-            return false;
-    }
-
-    public boolean anterior(int dia, int mes, int ano) {
-        if (this.ano < ano)
-            return true;
-        else if (this.ano == ano && this.mes < mes)
-            return true;
-        else if (this.ano == ano && this.mes == mes && this.dia < dia)
+        else if (this.ano == data.ano && this.mes == data.mes && this.dia > data.dia)
             return true;
         else
             return false;
     }
 
-    public boolean equals(int dia, int mes, int ano) {
-        if (this.dia == dia && this.mes == mes && this.ano == ano)
+    public boolean anterior(Data data) {
+        if (this.ano < data.ano)
+            return true;
+        else if (this.ano == data.ano && this.mes < data.mes)
+            return true;
+        else if (this.ano == data.ano && this.mes == data.mes && this.dia < data.dia)
+            return true;
+        else
+            return false;
+    }
+
+    public boolean equals(Data data) {
+        if (this.dia == data.dia && this.mes == data.mes && this.ano == data.ano)
             return true;
         else
             return false;
