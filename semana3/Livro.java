@@ -3,6 +3,7 @@ public class Livro {
     private String titulo;
     private Autor autor;
     private int ano;
+    private int edicao;
 
     // Construtores (3)
     public Livro(String titulo) {
@@ -20,6 +21,13 @@ public class Livro {
         this.ano = ano;
     }
 
+    public Livro(String titulo, Autor autor, int ano, int edicao) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.ano = ano;
+        this.edicao = edicao;
+    }
+
     // Métodos
     public String getTitulo() {
         return this.titulo;
@@ -31,6 +39,10 @@ public class Livro {
 
     public int getAno() {
         return this.ano;
+    }
+
+    public int getEdicao() {
+        return this.edicao;
     }
 
     public void setTitulo(String titulo) {
@@ -46,5 +58,22 @@ public class Livro {
     public void setAno(int ano) {
         if(ano > 0)
             this.ano = ano;
-    }  
+    }
+
+    public void setEdicao(int edicao) {
+        if(edicao > 0)
+            this.edicao = edicao;
+    }
+
+    // Outros métodos
+    public void exibir() {
+        if(this.titulo != null)
+            System.out.println("Titulo: " + this.titulo);
+        if(this.ano > 0)
+            System.out.println("Ano: " + this.ano);
+        if(this.autor != null)
+            System.out.println("Nome do autor: " + this.autor.getNome());
+        if(this.edicao > 0)
+            System.out.println("Edição: " + this.edicao);
+    }
 }

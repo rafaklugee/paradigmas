@@ -10,9 +10,6 @@ public class PrincipalLivro {
         Scanner input = new Scanner(System.in);
 
         Livro[] livro = new Livro[3];
-        for (int i = 0; i < 3; i++) {
-            livro[i] = new Livro("");
-        }
 
         for (int i = 0; i < 3; i++) {
             System.out.print("Digite o título: ");
