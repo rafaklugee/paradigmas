@@ -1,11 +1,20 @@
 public class Livro {
     // Atributos
     private String titulo;
-    private String autor;
+    private Autor autor;
     private int ano;
 
-    // Construtores
-    public Livro(String titulo, String autor, int ano) {
+    // Construtores (3)
+    public Livro(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Livro(String titulo, Autor autor) {
+        this.titulo = titulo;
+        this.autor = autor;
+    }
+
+    public Livro(String titulo, Autor autor, int ano) {
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
@@ -16,7 +25,7 @@ public class Livro {
         return this.titulo;
     }
 
-    public String getAutor() {
+    public Autor getAutor() {
         return this.autor;
     }
 
@@ -25,12 +34,12 @@ public class Livro {
     }
 
     public void setTitulo(String titulo) {
-        if(!titulo.equals(null))
+        if(titulo != null)
             this.titulo = titulo;
     }
 
-    public void setAutor(String autor) {
-        if(!autor.equals(null))    
+    public void setAutor(Autor autor) {
+        if(autor != null)    
             this.autor = autor;
     }
 

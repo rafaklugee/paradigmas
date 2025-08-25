@@ -3,7 +3,11 @@ public class Autor {
     private String nome;
     private String nacionalidade;
 
-    // Construtores
+    // Construtores (3)
+    public Autor(String nome) {
+        this.nome = nome;
+    }
+
     public Autor(String nome, String nacionalidade) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
@@ -19,15 +23,12 @@ public class Autor {
     }
 
     public void setNome(String nome) {
-        if(!nome.equals(null))
+        if(nome != null)
             this.nome = nome;
     }
 
     public void setNacionalidade(String nacionalidade) {
-        if(!nacionalidade.equals(null))    
+        if(nacionalidade != null)    
             this.nacionalidade = nacionalidade;
     }
-
-
-    
 }
