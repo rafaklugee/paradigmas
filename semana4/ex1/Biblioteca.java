@@ -1,5 +1,3 @@
-package semana4.ex1;
-
 public class Biblioteca {
     // Atributos
     protected String titulo;

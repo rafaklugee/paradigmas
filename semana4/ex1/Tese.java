@@ -1,5 +1,3 @@
-package semana4.ex1;
-
 public class Tese extends Biblioteca {
     String disciplina;
     String orientador;
