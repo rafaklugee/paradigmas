@@ -38,5 +38,10 @@ public class Principal {
 O conceito de polimorfismo está presente quando o array é declarado como Imovel[] e,
 mesmo assim, armazena objetos de ImovelNovo e ImovelVelho. Ao chamar
 imoveis[i].calcularValorImovel(0, metros), o método correto (de ImovelNovo ou ImovelVelho)
-é executado conforme o tipo real do objeto, mesmo usando a referência do tipo Imovel. 
+é executado conforme o tipo real do objeto, mesmo usando a referência do tipo Imovel.
+
+Polimorfismo
+Nome da categoria: Universal de inclusão
+Classe que foi usada: Imovel.java
+Instruções referentes a categoria: Imovel[] imoveis = new Imovel[3];
 */
