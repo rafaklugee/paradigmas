@@ -1,7 +1,7 @@
 public abstract class Imovel {
     // Atributos
-    String endereco;
-    double preco;
+    protected String endereco;
+    protected double preco;
 
     // Construtor
     public Imovel(String endereco, double preco) {
