@@ -1,4 +1,4 @@
-public class Tese extends Biblioteca {
+public class Tese extends ItemBiblioteca {
     String disciplina;
     String orientador;
 

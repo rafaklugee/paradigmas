@@ -1,6 +1,6 @@
 public class Led extends Lampada {
     // Atributo
-    boolean estado;
+    // boolean estado;
 
     // Construtor
     public Led(boolean estado) {

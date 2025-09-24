@@ -26,6 +26,7 @@ public class Principal2 {
         // Imprime os valores dos ingressos Normais
         for (int i = 0; i < 25; i++) {
             normais[i].imprimirValor();
+            // normais[i].imprimeNormal();
         }
 
         // Imprime os valores dos ingressos Camarote

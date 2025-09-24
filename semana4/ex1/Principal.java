@@ -7,10 +7,10 @@ public class Principal {
         LivroDidatico livroDidatico = new LivroDidatico("Matemática Básica", 2005, "Editora B", "Impresso");
 
         // Armazenando em um array
-        Biblioteca[] itens = {livro, tese, midia, livroDidatico};
+        ItemBiblioteca[] itens = {livro, tese, midia, livroDidatico};
 
         // Encontrando o item mais antigo
-        Biblioteca antigo = itens[0];
+        ItemBiblioteca antigo = itens[0];
         for (int i = 0; i < 4; i++) {
             if (itens[i].getAno() < antigo.getAno())
                 antigo = itens[i];

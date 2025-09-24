@@ -1,4 +1,4 @@
-public class Midia extends Biblioteca {
+public class Midia extends ItemBiblioteca {
     String formato;
 
     // Construtor
