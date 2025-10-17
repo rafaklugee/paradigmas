@@ -41,7 +41,7 @@ imoveis[i].calcularValorImovel(0, metros), o método correto (de ImovelNovo ou I
 é executado conforme o tipo real do objeto, mesmo usando a referência do tipo Imovel.
 
 Polimorfismo
-Nome da categoria: Universal de inclusão
+Nome da categoria: Inclusão (Universal)
 Classe que foi usada: Imovel.java
 Instruções referentes a categoria: Imovel[] imoveis = new Imovel[3];
 */

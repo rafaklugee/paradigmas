@@ -1,6 +1,6 @@
 public class Fluorescente extends Lampada {
     // Atributos
-    boolean estado;
+    // boolean estado;
     double comprimento;
 
     // Construtor

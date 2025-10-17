@@ -1,4 +1,4 @@
-public class Livro extends Biblioteca {
+public class Livro extends ItemBiblioteca {
     // Atributos
     String editora;
     String formato;
