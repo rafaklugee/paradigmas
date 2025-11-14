@@ -1,8 +1,8 @@
 module FuncoesDiversas where
 
 -- Soma de quadrados
--- somaQua1 :: Float -> Float -> Float -> Float
--- somaQua1 x y z = x^2 + y^2 + z^2
+somaQua1 :: Float -> Float -> Float -> Float
+somaQua1 x y z = x*x + y*y + z*z
 
 somaQua2 :: Float -> Float -> Float -> Float
 somaQua2 x y z = x ** 2 + y ** 2 + z ** 2

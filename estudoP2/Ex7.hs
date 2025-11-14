@@ -1,0 +1,5 @@
+primeirosTres :: [Int] -> [Int]
+primeirosTres [] = []
+primeirosTres [x] = [x]
+primeirosTres [x, y] = [x, y]
+primeirosTres (x:y:z:_) = [x, y, z]
