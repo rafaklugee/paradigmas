@@ -3,7 +3,7 @@ import java.util.TreeSet;
 import java.util.Comparator;
 
 public class Principal {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int numPersonagens;
 
         Scanner input = new Scanner(System.in);
