@@ -1,0 +1,35 @@
+                  <<interface>>
+                +------------------+
+                |   IModalidade    |
+                +------------------+
+                | + getObjetivo(): String |
+                | + getRegras(): String   |
+                +------------------+
+                         ^
+                         |
+                +------------------+
+                |   Modalidade     | <<abstract>>
+                +------------------+
+                | - atributos comuns|
+                +------------------+
+                         ^
+         ----------------+----------------
+         |                                 |
++-----------------------+          +----------------------+
+|  ModalidadeFitness    | <<abstract>> |  ModalidadeLuta       | <<abstract>>
++-----------------------+          +----------------------+
+| # duracaoHoras: int   |          | # equipamentos: [String]|
+| # duracaoMinutos: int |          | # vestuarios: [String]  |
++-----------------------+          | # estrategias: [String] |
+| + getObjetivo(): String|         | + getObjetivo(): String|
+| + getRegras(): String  |         | + getRegras(): String  |
+| + intensidade(): String|         | + intensidade(): String|
++-----------------------+          +----------------------+
+         ^                                 ^
+    ------+-------                   --------+--------
+    |              |                 |                 |
++-----------+  +--------------+   +-----------+   +-------------+
+| Musculacao|  |   Spinning   |   |   Boxe    |   |  MuayThai   |
++-----------+  +--------------+   +-----------+   +-------------+
+| - peso: int|  | - resistencia: int|           |                 |
++-----------+  +--------------+   +-----------+   +-------------+
