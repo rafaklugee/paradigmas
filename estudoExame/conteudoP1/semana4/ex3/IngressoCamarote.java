@@ -1,6 +1,6 @@
 public class IngressoCamarote extends IngressoVip {
     // Atributo
-    double valorAdicionalCamarote;
+    private double valorAdicionalCamarote;
 
     // Construtor
     public IngressoCamarote(double valor, double valorAdicionalVip, double valorAdicionalCamarote) {

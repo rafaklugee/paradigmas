@@ -8,8 +8,8 @@ public class PizzaDeQueijo extends Pizza {
     }
 
     // Métodos
-    public void descricao() {
-        System.out.print("Pizza com o melhor queijo da região!\n");
+    public void preparar() {
+        System.out.print("... Preparando Pizza de Queijo ...\n");
     }
 
     public int minutosForno() {

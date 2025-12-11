@@ -8,8 +8,8 @@ public class PizzaNapolitana extends Pizza {
     }
 
     // Métodos
-    public void descricao() {
-        System.out.print("Pizza Napolitana original!\n");
+    public void preparar() {
+        System.out.print("... Preparando Pizza Napolitana ...\n");
     }
 
     public int minutosForno() {

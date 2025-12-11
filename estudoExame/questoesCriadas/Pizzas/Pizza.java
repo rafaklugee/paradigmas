@@ -38,6 +38,7 @@ public abstract class Pizza {
         return this.preco;
     }
 
-    public abstract void descricao();
+    public abstract void preparar();
     public abstract int minutosForno();
+
 }

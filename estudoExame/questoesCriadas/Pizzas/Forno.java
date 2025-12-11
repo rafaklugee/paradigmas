@@ -11,12 +11,17 @@ public class Forno {
         forno.add(p);
     }
 
-    public void assar() {
-        System.out.print("\n=== FORNO DE PIZZAS ===");
-        for (Pizza p : forno) {
-            System.out.print("\nAssando pizza: " + p.getSabor());
-            System.out.print("\nTempo de forno: " + p.minutosForno());
-            System.out.print("\n");
-        }
+    //public void assar() {
+    //    System.out.print("\n=== FORNO DE PIZZAS ===");
+    //    for (Pizza p : forno) {
+    //        System.out.print("\nAssando pizza: " + p.getSabor());
+    //        System.out.print("\nTempo de forno: " + p.minutosForno());
+    //        System.out.print("\n");
+    //    }
+    //}
+
+    public void assar(Pizza p) {
+        p.preparar();
+        System.out.print("Essa pizza vai demorar " + p.minutosForno() + " minutos.\n");
     }
 }
